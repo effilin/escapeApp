@@ -44,23 +44,24 @@
 .pickMe {
     position: relative;
     margin: .5vw 0;
-    animation-play-state: paused
+    animation-name: catchMe;
+    animation-duration: 200ms; 
+    animation-delay: -1000ms;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    
+    animation-play-state: paused;
 }
 
 .pickMe:hover {
-    animation-name: catchMe;
-    animation-duration: 3s; 
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-out;
-    animation-delay: -100ms;
     animation-play-state: running;
 }
 
 @keyframes catchMe {
     0% {left:0%} 
-    100%{left:100%}
+    100%{left:90%}
 }
 
 
