@@ -1,0 +1,26 @@
+* {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#hero {
+    background-image: url("pictures/hero.jpg");
+    height: 13vw;
+}
+#sun {
+    width: 7.5vw;
+    height: 6vw;
+    opacity: 0.8;
+    margin-left: 92vw;
+}
+.card-body {
+    background-image: url(pictures/cardStock.jpg);
+    background-repeat: no-repeat;
+  
+}
+.card {
+    width:20vw;
+    height:15vw;
+    
+}

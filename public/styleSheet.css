@@ -1,0 +1,67 @@
+* {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#hero {
+    background-image: url("pictures/hero.jpg");
+    height: 13vw;
+
+}
+#clock {
+    background-image: url(/public/pictures/clockBack.jpg);
+    height: auto;
+    margin: 1%;
+    font-family: "Jersey 15 Charted", sans-serif;
+    font-weight: 400;
+   font-style: normal;
+    
+}
+#mainContainer {
+    padding-left: 0%;
+}
+
+#aside {
+    background-image: url(/public/pictures/aside.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 60vw;
+    width: 20vw;
+    padding-left: 1vw;
+}
+
+#sun {
+    width: 7.5vw;
+    height: 6vw;
+    opacity: 0.8;
+    margin-left: 92vw;
+}
+
+
+#crazyBtnBox {
+    background-image: url(/public/pictures/buttonbox.jpg);
+}
+.pickMe {
+    position: relative;
+    margin: .5vw 0;
+    animation-play-state: paused
+}
+
+.pickMe:hover {
+    animation-name: catchMe;
+    animation-duration: 3s; 
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-delay: -100ms;
+    animation-play-state: running;
+}
+
+@keyframes catchMe {
+    0% {left:0%} 
+    100%{left:100%}
+}
+
+
+
