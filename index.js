@@ -2,26 +2,31 @@ import moment from"moment";
 import express from "express";
 
 const app = express();
-const port = 3000
+const port = 3000;
+app.use('/', express.static('public'));
+
 const shadows = 0;
 const sunLocal = '';
 
 
-let myHours = moment().hour();
-let myMin = moment().minute();
+const myHours = moment().hour();
+const myMins = moment().minute();
 
 function moveSun(myHours){
     const sunSpot=myHours * 4;
-    document.getElementById('sun').style.marginLeft=sunSpot;
+    let sunny =document.getElementById('sun')
+    sunny.style= `marginLeft: ${sunSpot}`;
+    console.log(sunSpot);
 }
 
-moveSun();
+moveSun(myHours);
 
-function myClock(myHours, myMin) {
-
-    let display = document.getElementById('clockDisplay').innerHTML= ` ${myHours} : ${myMin} ` ;
+function myClock(myHours, myMins) {
+    let myDisplay = document.getElementById('clockDisplay');
+    myDisplay.innerHTML= ` ${myHours} : ${myMins} ` ;
     console.log(displayTime);
 }
+
 function pickFunction() {
     alert("You shall Not PASS!")
 }
@@ -34,12 +39,7 @@ function rejectFunction() {
         alert("you canceled")
     }
 }
-
-
-
-console.log(myHours)
-app.use('/', express.static('public'));
-
+console.log(myMins);
 app.listen(port, () => {
     console.log(`Example app listening
     at http://localhost:${port}`)

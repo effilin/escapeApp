@@ -5,7 +5,7 @@
 }
 
 #hero {
-    background-image: url("pictures/hero.jpg");
+    background-image: url("/public/pictures/hero.jpg");
     height: 13vw;
 }
 #sun {
@@ -15,7 +15,7 @@
     margin-left: 92vw;
 }
 .card-body {
-    background-image: url(pictures/cardStock.jpg);
+    background-image: url(/public/pictures/cardStock.jpg);
     background-repeat: no-repeat;
   
 }

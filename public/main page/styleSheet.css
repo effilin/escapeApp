@@ -4,7 +4,7 @@
     font-style: normal;
 }
 #hero {
-    background-image: url("pictures/hero.jpg");
+    background-image: url("/public/pictures/hero.jpg");
     height: 13vw;
 
 }
@@ -34,7 +34,7 @@
     width: 7.5vw;
     height: 6vw;
     opacity: 0.8;
-    margin-left: 92vw;
+
 }
 
 

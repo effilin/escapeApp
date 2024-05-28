@@ -19,3 +19,4 @@ function addCard(array) {
     }
 }
 addCard(products);
+
