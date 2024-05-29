@@ -40,6 +40,30 @@ function rejectFunction() {
     }
 }
 console.log(myMins);
+
+
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['clicks', 'probability', 'just here', 'time',],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+
 app.listen(port, () => {
     console.log(`Example app listening
     at http://localhost:${port}`)

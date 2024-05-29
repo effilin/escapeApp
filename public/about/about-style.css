@@ -3,7 +3,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
 #hero {
     background-image: url("/public/pictures/hero.jpg");
     height: 13vw;
@@ -12,19 +11,5 @@
     width: 7.5vw;
     height: 6vw;
     opacity: 0.8;
-    margin-left: 92vw;
-}
-.card-body {
-    background-image: url(/public/pictures/cardStock.jpg);
-    background-repeat: no-repeat;
-  
-}
-.card {
-    width:20vw;
-    height:15vw;
-    
-}
-#main {
-    width: 95%;
-    padding: 1%;
+
 }
