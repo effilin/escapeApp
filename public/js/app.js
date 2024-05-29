@@ -1,10 +1,3 @@
-import moment from"moment";
-import express from "express";
-
-const app = express();
-const port = 3000;
-app.use('/', express.static('public'));
-
 const shadows = 0;
 const sunLocal = '';
 
@@ -36,7 +29,7 @@ function rejectFunction() {
     if (confirm("Press a Button!")) {
         alert("you canceled")
     } else {
-        alert("you canceled")
+        alert("hint 10")
     }
 }
 console.log(myMins);
@@ -63,8 +56,3 @@ new Chart(ctx, {
   }
 });
 
-
-app.listen(port, () => {
-    console.log(`Example app listening
-    at http://localhost:${port}`)
-    });

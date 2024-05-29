@@ -61,7 +61,7 @@
     margin: .5vw 0;
     animation-name: catchMe;
     animation-duration: 200ms; 
-    animation-delay: -1000ms;
+    animation-delay: -100ms;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
     animation-direction: alternate;
