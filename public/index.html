@@ -19,16 +19,15 @@
         <header id="hero" class="container-fluid ">
             <div class="row">
                 <div class="col-12">
-                    <img id="sun" src="/public/pictures/sun.png" alt="sun" style="margin-left: 92vw;">
+                    <img id="sun" src="/public/pictures/sun.png" alt="sun image" style="margin-left: 92vw;">
                 </div>
             </div>
             <div class="row container">
                 <h1 class=" col  ">Escape Page</h1>
-                <h1 class=" col  ">Explore!</h1>
 
                 <div class="dropdown col col-sm-2 col-md-2">
                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown button
+                    Explore
                    </button>
                    <ul class="dropdown-menu">
                        <li><a class="dropdown-item" href="index.html">Home</a></li>
@@ -44,8 +43,10 @@
         
 
         <div id="mainContainer" class="container-fluid">
+            
             <div class="row">
                 <div id="aside" class=" col-2 border rounded mt-2">
+                    <a href="javascript:void(0)" id="closebtn" class="btn btn-info" onclick="closePict()">close</a>
                     <h4 class="py-2 border-bottom border-info-subtle"> A Good Place to Start</h4>
                     <p> "I'm late, I'm late!</p>
                     <p>For a very important date</p>
@@ -59,18 +60,24 @@
                 </div>
         
    
-                <div id="main" class="col-9 border rounded mt-2 "> 
+                <div id="main" class="col-9 col-sm-12 border rounded mt-2 "> 
                     <div class="row">
+                        <button id="openbtn" class="btn btn-info" onclick="sideOpen()">A Good Place to Start</button>
 
-                        <div id="clock" class=" col-2 border border-top-0 border-3 rounded text-center">
+                        <div id="clock" class=" col-2 col-sm-6 border border-top-0 border-3 rounded text-center">
                             <div id="clockBack" class="border border-light border-2 rounded my-1">
-                                <h3 class="clockDisplay" >10:30</h3>
+                                <h3 id="clockDisplay">10:30</h3>
                             </div>
+
+                            <div id="dayBack" class="border border-light border-2 rounded my-1">
+                                <h3 id="dayDisplay">Day</h3>
+                            </div>
+
                         </div>
 
-                        <form  id="clockForm" class="col-2 d-flex flex-column border border-top-0 border-3 rounded text-center">
+                        <form  id="clockForm" class="col-2 col-sm-6 d-flex flex-column border border-top-0 border-3 rounded text-center">
                                <label for="submitClock" class="p-1 m-2">What Time should it Be?</label>
-                               <input type="text" id="submitClock" class="p-1 m-1" value= "10:30">
+                               <input type="time" id="submitClock" class="p-1 m-1" value= "10:30">
                                <button type="submit" class="btn btn-outline-info p-1 m-1">Are You Sure?</button>
                         </form>
 
@@ -90,8 +97,9 @@
                             <button type="submit" class="btn btn-outline-success p-1 m-1">Interesting Choice</button>
                         </form> 
 
-                        <div id="cardFour" class="col-2 d-flex flex-column border border-top-0 border-3 rounded text-center">
-
+                        <div id="cardFour" class="col-2 d-flex flex-column justify-content-center align-items-center border border-top-0 border-3 rounded text-center">
+                            
+                            <iframe width="260" height="115" src="https://www.youtube.com/embed/DF6JhvbSMxs?si=PvDLS7wKHqg8FEWm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div  class="row">
@@ -119,7 +127,7 @@
                 </div>
                
 
-                <div class="col-1 border rounded mt-2">
+                <div id="trellisBox" class="col-1 col-sm-0 border rounded mt-2">
                     <div class="d-flex align-items-baseline ">
                         <img id="growingVine" src="/public/pictures/myvine.png" alt="colorful vine">
                     </div>
@@ -127,10 +135,8 @@
             </div>
         </div>
             
-
-       <script src="/public/js/app.js"></script> 
        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+       <script src="/public/js/timePuzzle.js"></script> 
     </body>
 </html>

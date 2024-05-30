@@ -26,6 +26,11 @@
     margin: 2px;
     width: auto;
 }
+#dayBack {
+    background-image: url(/public/pictures/displayBack.png);
+    margin: 2px;
+    width: auto;
+}
 #clockBack {
     background-image: url(/public/pictures/displayBack.png);
 }
@@ -34,14 +39,27 @@
     margin: 2px;
     width: auto;
 }
-
-
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: rgb(15, 83, 55);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+}
 #aside {
     background-image: url(/public/pictures/aside.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 60vw;
     padding-left: 1vw;
+    width: auto;
 }
 
 #sun {
@@ -83,35 +101,73 @@
     animation-name: growingVine;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+    animation-play-state: paused;
     
 }
 
 @keyframes growingVine {
     0%{
-        height: 0vw;
-        width: 2vw;
+        transform: scale(0, 0);
         opacity: 1;
     }
     25% { 
-        height: 20vw;
-        width: 4vw;
+        transform: scale(.5, .5);
         opacity: 1;
     }
     50% {
-        height: 40vw;
-        width: 4vw;
+        transform: scale(1, 1);
         opacity: 1;
     }
     75%{
-        height: 40vw;
-        width: 4vw;
+        transform: scale(1, 4);
         opacity: .5;
     }
     100%{
-        height: 40vw;
-        width: 4vw;
+        transform: scale(1, 4);
         opacity: 0;
     }
 }
+#openbtn {
+    visibility: hidden;
+    height: 0vw;
+    overflow: hidden;
+}
+#closebtn {
+    margin-bottom: 1vw;
+    height: 7vw;
+    width: 11vw;
+}
+@media screen and (max-width: 576px) {
+
+    #aside {
+        visibility: collapse;
+        height: auto;
+        overflow: scroll;
+    }
+    #openbtn {
+        visibility: visible;
+        height: 7vw;
+    }
+    #openbtn:hover {
+        background-color: aquamarine;
+    }
+#hero {
+    height: auto;
+    margin-bottom: 0; 
+}
+#trellisBox {
+    visibility: hidden;
+}
+#main {
+    margin: .5vw;
+    width: 97%;
+}
+#crazyBtnBox {
+    width: 97%
 
 
+}
+#clock {
+    width: 50%;
+}
+}
