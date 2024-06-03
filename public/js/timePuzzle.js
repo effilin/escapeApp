@@ -91,6 +91,8 @@ function randomNum(x=1) {
   myChartData[2].amount = myNum;
 };
 
+myChartData[0].amount= myClicks;
+myChartData[3].amount= myMins;
 randomNum(x=1);
 
 //const uniqueChart = formSubmits.reduce((prev, cur) => {

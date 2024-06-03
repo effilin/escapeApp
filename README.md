@@ -23,3 +23,7 @@ User Story 3:
 i would like to be able to play the puzzle from my phone, tablet and computer.
 
 
+Figma:
+https://www.figma.com/design/OB7wQV5zFI0sAYPi90efGk/Untitled?node-id=3-114&t=ve92b9itVaC0GfHC-1
+
+
