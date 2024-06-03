@@ -91,14 +91,16 @@ function randomNum(x=1) {
   myChartData[2].amount = myNum;
 };
 
+
+function updateChart() {
+let probabilityValue= formSubmits.length;
+myChartData[1].amount= probabilityValue;
 myChartData[0].amount= myClicks;
 myChartData[3].amount= myMins;
+}
 randomNum(x=1);
 
-//const uniqueChart = formSubmits.reduce((prev, cur) => {
-  
-//})
-
+setTimeout(updateChart,10000)
  const ctx = document.getElementById('myChart');
 
  new Chart(ctx, {
@@ -106,7 +108,7 @@ randomNum(x=1);
    data: {
     
      datasets: [{
-       label: '# of Votes',
+       label: 'whatever',
        data: myChartData,
        borderWidth: 1,
        parsing: {
@@ -124,7 +126,12 @@ randomNum(x=1);
    }
  });
 
-
+ function updateChart() {
+  let probabilityValue= formSubmits.length;
+  myChartData[1].amount= probabilityValue;
+  myChartData[0].amount= myClicks;
+  myChartData[3].amount= myMins;
+  }
  
 
  
