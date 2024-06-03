@@ -39,20 +39,7 @@
     margin: 2px;
     width: auto;
 }
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: auto;
-    background-color: rgb(15, 83, 55);
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-}
+
 #aside {
     background-image: url(/public/pictures/aside.jpg);
     background-repeat: no-repeat;
@@ -133,11 +120,57 @@
     overflow: hidden;
 }
 #closebtn {
+    visibility: hidden;
+    overflow: hidden;
     margin-bottom: 1vw;
-    height: 7vw;
-    width: 11vw;
+    height:auto;
+    width: auto;
 }
 @media screen and (max-width: 576px) {
+
+#aside {
+        visibility: collapse;
+        height: auto;
+        overflow: scroll;
+    }
+#openbtn {
+        visibility: visible;
+        height: auto;
+        margin-bottom: 1vw;
+        justify-content: center;
+    }
+#openbtn:hover {
+        background-color: aquamarine;
+    }
+#hero {
+        height: auto;
+        margin-bottom: 0; 
+    }
+#trellisBox {
+        visibility: collapse;
+}
+#main {
+       margin: .5vw;
+       width: 97%;
+}
+#crazyBtnBox {
+        width: 97%;
+        margin: auto;
+}
+#clock {
+        width: 50%;
+        margin-right: auto;
+}
+#quoteForm{
+    margin-left:auto;
+    width: 97%;
+}
+#myChart {
+    width: 97vw;
+}
+}
+
+@media screen and (max-width: 720px) {
 
     #aside {
         visibility: collapse;
@@ -151,23 +184,135 @@
     #openbtn:hover {
         background-color: aquamarine;
     }
-#hero {
-    height: auto;
-    margin-bottom: 0; 
-}
+    #hero {
+        height: auto;
+        margin-bottom: 0; 
+    }
 #trellisBox {
-    visibility: hidden;
+    visibility: collapse;
+    width: auto;
 }
 #main {
     margin: .5vw;
     width: 97%;
 }
 #crazyBtnBox {
-    width: 97%
-
-
+    width: 97%;
+    margin: auto;
 }
 #clock {
-    width: 50%;
+    margin-right: auto;
+}
+#clockForm {
+    width: 45%;
+}
+#quoteForm{
+    margin-left:auto;
+    width: 97%;
+}
+#cardFour {
+    margin-left: 20%;
+}
+#myChart {
+    width: 100%;
 }
 }
+
+@media screen and (max-width: 960px) {
+    #main {
+        margin: .5vw;
+        width: auto;
+    }
+    #aside {
+        width: fit-content;
+
+    }
+    #clock {
+        width: auto;
+        margin-right: 2vw;
+    }
+    #clockForm {
+        width: auto;
+    }
+    #quoteForm{
+        margin-left:auto;
+        width: 97%;
+    }
+    #cardFour {
+        margin-left: 20%;
+    }
+    #myChart {
+        width: 100%;
+    }
+    #crazyBtnBox {
+        width: 97%;
+        margin: auto;
+    }
+    #trellisBox {
+        visibility: collapse;
+        width: 0vw;
+    }
+}
+@media screen and (max-width: 1140px) {
+    #main {
+        margin: .5vw;
+        width: 70%;
+        float: right;
+    }
+    #aside {
+        position: static;
+        width: 20%;
+        z-index: 1;
+    }
+    #clock {
+        margin-right: auto;
+    }
+    #clockForm {
+        width: 45%;
+    }
+    #quoteForm{
+        margin-left:auto;
+        width: 97%;
+    }
+    #cardFour {
+        margin-left: 20%;
+    }
+    #myChart {
+        width: 100%;
+    }
+    #crazyBtnBox {
+        width: 97%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1141px) {
+    #main {
+        margin: .5vw;
+        width: 70%;
+        float: right;
+    }
+    #aside {
+        position: static;
+        width: 20%;
+        z-index: 1;
+    }
+    #clock {
+        margin-right: 1vw;
+        width: 25%;
+    }
+    #clockForm {
+        width: 25%;
+    }
+    #quoteForm{
+        margin-left:1vw;
+        width: 45%;
+    }
+  
+    #myChart {
+        width: 100%;
+    }
+    #crazyBtnBox {
+        width: 97%;
+        margin: auto;
+    }
+};
