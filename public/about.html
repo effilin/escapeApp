@@ -25,32 +25,44 @@
             <div class="row container">
                 <h1 class=" col  ">Escape Page</h1>
                 <h1 class=" col ">About</h1>
-
-                <div class="dropdown col col-sm-2 col-md-2">
-                   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Explore
-                   </button>
-                   <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="/public/main page/index.html">Puzzle</a></li>
-                       <li><a class="dropdown-item" href="/public/storePage/store.html">Shop</a></li>
-                       <li><a class="dropdown-item" href="#">Hints</a></li>
-                       <li><a class="dropdown-item" href="/public/about/about.html">about</a></li>
-                    </ul>
-                </div>
+                <div class="dropdown col">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Explore
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Puzzle</a></li>
+                        <li><a class="dropdown-item" href="store.html">Shop</a></li>
+                        <li><a class="dropdown-item" href="about.html">about</a></li>
+                     </ul>
+                 </div>
+                
             </div>
            
 
         </header >
-        <aside>
-            <div class="border rounded">
-                <h3> Hello!</h3>
-                <p>I am  a web development/ software engineering  student. This is my first Mini Project!</p>
-                <p>I wanted to make a fun and color site that used HTML,CSS, and JavaScript in fun ways.</p>
-                <p>my favorite thing about this page is the buttons that run away.</p>
-                <p> please check out my Git Hub.</p>
-                <a href="https://github.com/effilin">Eva Nummer</a>
+        <div class="container">
+            <div class="row">
+                <aside id="aside" class="col-6">
+                    <div id="asideText" class="border rounded ">
+                        <h3> Hello!</h3>
+                        <p>I am  a web development/ software engineering  student. This is my first Mini Project!</p>
+                        <p>I wanted to make a fun and color site that used HTML,CSS, and JavaScript in fun ways.</p>
+                        <p>my favorite thing about this page is the buttons that run away.</p>
+                        <p> please check out my Git Hub.</p>
+                        <img id="gitIcon" src="pictures/github-mark.png" alt="github icon">
+                        <a href="https://github.com/effilin">Eva Nummer</a>
+                    </div>
+                </aside>
+                <div id="main" class="border rounded col-6">
+                    <h1> Hints!</h1>
+                        <div id="hintBox">
+                            <h4> The value in the submit box is intended to throw you off</h4>
+                            <h3> what would you say if the time didn't matter?</h3>
+                            <div id="overlay"></div>
+                        </div>
+                </div>
             </div>
-        </aside>
+        </div>
     </body>
 </html>
         
