@@ -65,7 +65,7 @@
     position: relative;
     margin: .5vw 0;
     animation-name: catchMe;
-    animation-duration: 200ms; 
+    animation-duration: 500ms; 
     animation-delay: -100ms;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
@@ -126,7 +126,7 @@
     height:auto;
     width: auto;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 540x) {
 
 #aside {
         visibility: collapse;
